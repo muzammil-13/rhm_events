@@ -1,0 +1,15 @@
+<form id="contactForm" class="max-w-lg mx-auto bg-white p-6 shadow-lg rounded">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <input type="text" id="name" placeholder="Your Name" class="w-full p-2 mb-2 border rounded" required>
+    <input type="email" id="email" placeholder="Your Email" class="w-full p-2 mb-2 border rounded" required>
+    <textarea id="message" placeholder="Your Message" class="w-full p-2 mb-2 border rounded"></textarea>
+    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Send</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_id', 'template_id', this);
+    alert('Message Sent Successfully!');
+});
+</script>
