@@ -1,135 +1,264 @@
-# **Event Management Portfolio Website**
+# **RHM Events & Wedding Company**
 
 ### **🚀 Overview**
 
-This is a **static portfolio website** for an event management company, built with  **HTML, Tailwind CSS, and JavaScript** . It showcases past events, allows easy browsing with search, filtering, and pagination, and provides contact options for potential clients. The website is optimized for performance, SEO, and future scalability to  **Next.js** .
+This is a **static portfolio website** for RHM Events & Wedding Company based in **Erattupetta, Kerala**. Built with **HTML5, Tailwind CSS, and JavaScript**, it showcases event management services and provides an elegant platform for potential clients to explore our work and get in touch.
+
+The website follows a **component-based architecture** with reusable elements and is optimized for performance, SEO, and future scalability to **Next.js**.
 
 ---
 
-## **🎯 Features**
+## **🎯 Current Features**
 
-### **1️⃣ Hero Section**
+### **✅ Implemented**
 
-✔ Stunning background image/video
+#### **1️⃣ Hero Section**
+✔ Auto-sliding carousel with 3 hero images  
+✔ Compelling tagline: "Crafting Unforgettable Moments"  
+✔ Prominent CTA button  
 
-✔ Catchy tagline & CTA (Call-to-Action)
+#### **2️⃣ Header & Navigation**
+✔ Professional logo with SVG icon  
+✔ Responsive navigation menu  
+✔ Consistent CTA buttons throughout  
 
-### **2️⃣ Event Gallery**
+#### **3️⃣ Component Architecture**
+✔ Reusable header/navbar component  
+✔ Modular layout containers  
+✔ Standardized button components  
 
-✔ Grid-based layout for images
+#### **4️⃣ Design System**
+✔ Consistent color palette (#fcfbf8, #fac638, #1c180d, #9e8747)  
+✔ Typography: Plus Jakarta Sans + Noto Sans  
+✔ Responsive Tailwind CSS framework  
 
-✔ Lazy loading for faster performance
+### **🚧 In Development**
 
-✔ Lightbox for full-size viewing
+#### **5️⃣ Content Sections**
+🔄 Event Gallery with search & filtering  
+🔄 Client Testimonials carousel  
+🔄 FAQ section with expandable items  
+🔄 About Us section  
+🔄 Contact form with EmailJS integration  
 
-### **3️⃣ Search, Filter & Pagination**
-
-✔ **Live search** (Client-side filtering)
-
-✔ **Category-based filtering**
-
-✔ **Pagination for large event lists**
-
-### **4️⃣ About Us Section**
-
-✔ Company story & unique selling points
-
-✔ Team introduction (optional)
-
-### **5️⃣ Contact & Inquiry Form**
-
-✔ Simple form (Name, Email, Message)
-
-✔ **EmailJS** integration (No backend needed)
-
-✔ WhatsApp chat button for quick client interaction
-
-### **6️⃣ Testimonials Section**
-
-✔ Client reviews & ratings
-
-✔ Auto-sliding carousel
-
-### **7️⃣ FAQ Section**
-
-✔ Expand/collapse UI for common questions
-
-### **8️⃣ Google Maps Integration**
-
-✔ Business location embedded for easy navigation
-
-### **9️⃣ Blog Section (Optional, for SEO)**
-
-✔ Event planning tips, industry insights
+#### **6️⃣ Additional Features**
+🔄 Google Maps integration  
+🔄 WhatsApp chat integration  
+🔄 Lightbox image viewer (Fancybox)  
 
 ---
 
 ## **🛠️ Tech Stack**
 
-| Technology                | Usage                                     |
-| ------------------------- | ----------------------------------------- |
-| **HTML5**           | Structure of the website                  |
-| **Tailwind CSS**    | Styling & responsiveness                  |
-| **JavaScript**      | Search, filter, pagination, interactivity |
-| **Fancybox.js**     | Lightbox image viewer                     |
-| **EmailJS**         | Contact form submission                   |
-| **Google Maps API** | Business location integration             |
-| **Netlify**         | Hosting & deployment                      |
+| Technology | Usage | Status |
+|------------|-------|--------|
+| **HTML5** | Structure & semantic markup | ✅ Implemented |
+| **Tailwind CSS** | Utility-first styling & responsiveness | ✅ Implemented |
+| **JavaScript** | Interactivity & carousel functionality | ✅ Partial |
+| **Plus Jakarta Sans** | Primary typography | ✅ Implemented |
+| **Fancybox.js** | Lightbox image viewer | 🔄 Configured |
+| **EmailJS** | Contact form submission | 🔄 Planned |
+| **Google Maps API** | Business location display | 🔄 Planned |
+| **Font Awesome** | Icon library | ✅ Configured |
 
 ---
 
-## **🌍 Deployment**
+## **📁 Project Structure**
 
-The website is deployed on  **Netlify** , and the domain is managed via  **Hostinger** .
-
-### **🔹 Local Development Setup**
-
-1️⃣ Clone the repository:
-
-```sh
-git clone https://github.com/your-username/event-portfolio.git
+```
+rhm_events/
+├── index.html                 # Main homepage (updated)
+├── pages/
+│   └── main.html             # Alternative homepage design
+├── components/
+│   ├── navbar.html           # Reusable header component
+│   └── footer.html           # Reusable footer component
+├── testimonials.html         # Testimonials page template
+├── faq.html                  # FAQ page template
+├── assets/
+│   ├── images/
+│   │   ├── logos/
+│   │   │   ├── logo.jpg
+│   │   │   └── favicon.ico
+│   │   └── hero/
+│   │       ├── hero_image1.jpg
+│   │       ├── hero_image2.jpg
+│   │       └── hero_image3.jpg
+│   └── js/
+│       └── script.js         # Main JavaScript file
+└── README.md
 ```
 
-2️⃣ Navigate to the project folder:
+---
 
-```sh
-cd event-portfolio
+## **🌍 Development Setup**
+
+### **🔹 Local Development**
+
+1️⃣ **Clone the repository:**
+```bash
+git clone https://github.com/muzammil-13/rhm_events.git
 ```
 
-3️⃣ Open `index.html` in a browser
+2️⃣ **Navigate to project:**
+```bash
+cd rhm_events
+```
 
-### **🔹 Deploying to Netlify**
+3️⃣ **Open in browser:**
+```bash
+# Open index.html directly in browser
+# Or use a local server
+python -m http.server 8000
+# Then visit: http://localhost:8000
+```
 
-1️⃣ Push changes to GitHub
-
-2️⃣ Link repo to Netlify
-
-3️⃣ Set custom domain via Hostinger
-
----
-
-## **📌 Future Improvements (Next.js Upgrade Plan)**
-
-✔ Convert to **Next.js** for dynamic content
-
-✔ Integrate **CMS** for easy event updates
-
-✔ Add **user authentication** for client dashboard
-
-✔ Implement **SEO optimizations** with Next.js
+### **🔹 Development Server (Recommended)**
+```bash
+# Using Node.js live-server
+npm install -g live-server
+live-server
+```
 
 ---
 
-## **📞 Contact**
+## **🎨 Component System**
 
-📩  **Email** : [contact@eventcompany.com](mailto:contact@eventcompany.com)
+### **🔄 Reusable Components**
 
-🌐  **Website** : [yourdomain.com](https://yourdomain.com/)
+| Component | File | Usage | Reusability |
+|-----------|------|-------|-------------|
+| **Header/Navbar** | `components/navbar.html` | All pages | 100% |
+| **Footer** | `components/footer.html` | All pages | 100% |
+| **CTA Button** | Inline classes | Throughout site | 100% |
+| **Layout Container** | Inline classes | Page structure | 90% |
+| **Hero Section** | `index.html` | Homepage only | 20% |
 
-📍  **Location** : City, Country
+### **🎯 Design Tokens**
+
+```css
+/* Color Palette */
+--bg-primary: #fcfbf8;      /* Main background */
+--accent-yellow: #fac638;   /* CTA buttons & highlights */
+--text-primary: #1c180d;    /* Main text */
+--text-secondary: #9e8747;  /* Secondary text */
+--border-light: #f4f0e6;    /* Subtle borders */
+```
 
 ---
 
-## **🔖 License**
+## **📈 Current Status & Roadmap**
 
-This project is licensed under the  **MIT License** . Feel free to use and modify!
+### **🟢 Completed (40%)**
+- [x] Basic HTML structure
+- [x] Header/Navigation component
+- [x] Hero section with carousel
+- [x] Responsive design foundation
+- [x] Component extraction
+
+### **🟡 In Progress (30%)**
+- [ ] Event gallery implementation
+- [ ] Testimonials integration
+- [ ] FAQ section integration
+- [ ] Contact form setup
+
+### **🔴 Planned (30%)**
+- [ ] About Us section
+- [ ] Google Maps integration
+- [ ] WhatsApp chat widget
+- [ ] Performance optimization
+- [ ] SEO improvements
+
+---
+
+## **🚀 Deployment**
+
+### **🔹 Current Hosting**
+- **Platform**: Netlify (planned)
+- **Domain**: Hostinger (planned)
+- **Status**: Local development
+
+### **🔹 Deployment Commands**
+```bash
+# Push to GitHub (auto-deploys to Netlify)
+git add .
+git commit -m "Update: [description]"
+git push origin main
+```
+
+---
+
+## **🔧 Next Steps**
+
+### **Immediate Tasks (Week 1-2)**
+1. **Complete index.html** with all sections
+2. **Integrate testimonials** from testimonials.html
+3. **Add FAQ section** from faq.html
+4. **Implement event gallery** with filtering
+5. **Add contact form** with EmailJS
+
+### **Short-term Goals (Month 1)**
+1. **Deploy to Netlify** with custom domain
+2. **Add Google Maps** integration
+3. **Implement WhatsApp** chat widget
+4. **Performance optimization** (image compression, lazy loading)
+5. **SEO optimization** (meta tags, structured data)
+
+### **Long-term Vision (3-6 months)**
+1. **Migrate to Next.js** for better performance
+2. **Add CMS integration** (Strapi/Contentful)
+3. **Implement user dashboard** for clients
+4. **Add blog section** for SEO
+5. **Mobile app development** (React Native)
+
+---
+
+## **🤝 Contributing**
+
+### **Development Guidelines**
+- Follow **component-based architecture**
+- Maintain **consistent styling** with Tailwind
+- Use **semantic HTML** for accessibility
+- Test **responsive design** on all devices
+- Keep **performance** in mind (optimize images, minimize JS)
+
+### **Code Standards**
+- **HTML**: Semantic, accessible markup
+- **CSS**: Tailwind utility classes, avoid custom CSS
+- **JavaScript**: ES6+, modular approach
+- **Images**: WebP format, optimized for web
+
+---
+
+## **📞 Contact & Business Info**
+
+🏢 **RHM Events & Wedding Company**  
+📍 **Location**: Erattupetta, Kerala, India  
+📧 **Email**: info@rhmevents.com  
+📱 **Phone**: +91 XXXXX XXXXX  
+🌐 **Website**: [Coming Soon]  
+
+### **Services Offered**
+- ✨ Wedding Planning & Coordination
+- 🏢 Corporate Event Management
+- 🎉 Social Gatherings & Parties
+- 🎂 Private Celebrations
+- 📸 Event Photography & Videography
+
+---
+
+## **📄 License**
+
+This project is licensed under the **MIT License**. See LICENSE file for details.
+
+---
+
+## **🔖 Version History**
+
+- **v0.3.0** - Component extraction & hero carousel
+- **v0.2.0** - Header/navigation implementation  
+- **v0.1.0** - Initial project setup
+
+---
+
+*Last Updated: 06 June 2025*
