@@ -25,23 +25,26 @@
     
 </head>
 <body>
+<script>
+  fetch('components/navbar.html').then(res => res.text()).then(data => document.getElementById('navbar').innerHTML = data);
+  fetch('components/footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+</script>
 
   <!-- 🔄 REUSABLE: Root Layout Container - Base layout for all pages -->
     <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
 
       <!-- 🔄 REUSABLE: Main Layout Container - Standard layout wrapper -->
       <div class="layout-container flex h-full grow flex-col">
+        <div id="navbar"></div>
 
         <!-- 🔄 HIGHLY REUSABLE: Header Component - Perfect for all pages -->
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
+        <!-- <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
           <div class="flex items-center gap-4 text-[#1c180d]">
             <div class="size-6 flex items-center">
-              <!-- 🔄 REUSABLE: Logo Component - Brand identity across all pages -->
               <img src="assets\images\logos\logo.jpg" alt="RHM Events Logo" class="h-6 w-auto" />
             </div>
             <h1 class="text-[#1c180d] text-lg font-bold leading-tight tracking-[-0.015em]">RHM Events</h1>
           </div>
-          <!-- 🔄 HIGHLY REUSABLE: Navigation Component - Main nav for all pages -->
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
               <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Services</a>
@@ -52,11 +55,10 @@
             <button
               class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em]"
             >
-            <!-- 🔄 REUSABLE: CTA Button Component - Can be used throughout site -->
               <span class="truncate">Get a Quote</span>
             </button>
           </div>
-        </header>
+        </header> -->
 
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
@@ -298,6 +300,8 @@
           </div>
         </div>
     </div>
+    <div id="footer"></div>
+
      <!-- auto-sliding carousel of 3 hero images  -->
     <script>
   const heroImages = [
