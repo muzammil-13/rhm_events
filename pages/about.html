@@ -8,15 +8,21 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
     />
 
-    <title>Stitch Design</title>
+    <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
+    <script>
+  fetch('../components/navbar.html').then(res => res.text()).then(data => document.getElementById('navbar').innerHTML = data);
+  fetch('../components/footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+  </script>
     <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
+                <div id="navbar"></div>
+
+        <!-- <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
           <div class="flex items-center gap-4 text-[#1c180d]">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +53,7 @@
               <span class="truncate">Get a Quote</span>
             </button>
           </div>
-        </header>
+        </header> -->
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="@container">
@@ -178,7 +184,9 @@
             </div>
           </div>
         </div>
-        <footer class="flex justify-center">
+            <div id="footer"></div>
+
+        <!-- <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
               <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
@@ -191,7 +199,7 @@
               <p class="text-[#9e8747] text-base font-normal leading-normal">@2024 RHM Events &amp; Weddings. All rights reserved.</p>
             </footer>
           </div>
-        </footer>
+        </footer> -->
       </div>
     </div>
   </body>

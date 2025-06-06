@@ -8,15 +8,20 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
     />
 
-    <title>Stitch Design</title>
+    <title>Events Gallery</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
+    <script>
+  fetch('../components/navbar.html').then(res => res.text()).then(data => document.getElementById('navbar').innerHTML = data);
+  fetch('../components/footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+  </script>
     <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
+                <div id="navbar"></div>
+        <!-- <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
           <div class="flex items-center gap-4 text-[#1c180d]">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +52,7 @@
               <span class="truncate">Get a Quote</span>
             </button>
           </div>
-        </header>
+        </header> -->
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4">
@@ -194,5 +199,6 @@
         </div>
       </div>
     </div>
+        <div id="footer"></div>
   </body>
 </html>
