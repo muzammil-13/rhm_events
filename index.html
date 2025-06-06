@@ -5,15 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Best Event Management Services at Erattupetta - Creating Unforgettable Moments">
     <title>RHM Events & Wedding company</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/images/logos/favicon.ico" type="image/x-icon">    <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+    
+</head>
 <body>
-    <!-- Hero Section -->
-
-    <!-- Event Gallery -->
-
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#1c180d]">
+            <div class="size-6 flex items-center">
+              <img src="assets\images\logos\logo.jpg" alt="RHM Events Logo" class="h-6 w-auto" />
+            </div>
+            <h1 class="text-[#1c180d] text-lg font-bold leading-tight tracking-[-0.015em]">RHM Events</h1>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Services</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Portfolio</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">About Us</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Get a Quote</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  id="hero-section"
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("assets/images/hero/hero_image1.jpg");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Crafting Unforgettable Moments
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      RHM Events &amp; Wedding Company specializes in creating bespoke events that reflect your unique style and vision. From intimate gatherings to grand
+                      celebrations, we handle every detail with precision and care.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Get a Quote</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- auto-sliding carousel of 3 hero images  -->
+    <script>
+  const heroImages = [
+    "assets/images/hero/hero_image1.jpg",
+    "assets/images/hero/hero_image2.jpg",
+    "assets/images/hero/hero_image3.jpg"
+  ];
+  let current = 0;
+  setInterval(() => {
+    current = (current + 1) % heroImages.length;
+    document.getElementById("hero-section").style.backgroundImage =
+      `linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url('${heroImages[current]}')`;
+  }, 3000); // Change image every 3 seconds
+</script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
