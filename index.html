@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Best Event Management Services at Erattupetta - Creating Unforgettable Moments">
     <title>RHM Events & Wedding company</title>
-    <link rel="icon" href="assets/images/logos/favicon.ico" type="image/x-icon">    <head>
+    <link rel="icon" href="assets/images/logos/favicon.ico" type="image/x-icon">
+
+     <!-- 🔄 REUSABLE: Font Loading Component - Can be used across all pages -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -13,36 +15,28 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
     />
+
+    <!-- 🔄 REUSABLE: CSS Dependencies - Standard across all pages -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+
+  </head>
     
 </head>
 <body>
+<script>
+  fetch('components/navbar.html').then(res => res.text()).then(data => document.getElementById('navbar').innerHTML = data);
+  fetch('components/footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+  <!-- 🔄 REUSABLE: Root Layout Container - Base layout for all pages -->
     <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+
+      <!-- 🔄 REUSABLE: Main Layout Container - Standard layout wrapper -->
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0e6] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#1c180d]">
-            <div class="size-6 flex items-center">
-              <img src="assets\images\logos\logo.jpg" alt="RHM Events Logo" class="h-6 w-auto" />
-            </div>
-            <h1 class="text-[#1c180d] text-lg font-bold leading-tight tracking-[-0.015em]">RHM Events</h1>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Services</a>
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Portfolio</a>
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">About Us</a>
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Contact</a>
-            </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Get a Quote</span>
-            </button>
-          </div>
-        </header>
+        <div id="navbar"></div>
+
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="@container">
@@ -74,7 +68,217 @@
           </div>
         </div>
       </div>
+      <!-- services section -->
+      <div class="relative flex size-full min-h-screen flex-col bg-[#fbfaf9] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 id="services" class="text-[#191610] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Services</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e3dfd3] bg-[#fbfaf9] p-4 flex-col">
+                <div class="text-[#191610]" data-icon="Calendar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#191610] text-base font-bold leading-tight">Wedding Planner</h2>
+                  <p class="text-[#8c7f5a] text-sm font-normal leading-normal">Expert planning for your perfect day.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e3dfd3] bg-[#fbfaf9] p-4 flex-col">
+                <div class="text-[#191610]" data-icon="Calendar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#191610] text-base font-bold leading-tight">Event Management</h2>
+                  <p class="text-[#8c7f5a] text-sm font-normal leading-normal">Seamless execution for memorable events.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e3dfd3] bg-[#fbfaf9] p-4 flex-col">
+                <div class="text-[#191610]" data-icon="Lightbulb" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#191610] text-base font-bold leading-tight">Light &amp; Sound Works</h2>
+                  <p class="text-[#8c7f5a] text-sm font-normal leading-normal">Enhance your event with stunning visuals and sound.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e3dfd3] bg-[#fbfaf9] p-4 flex-col">
+                <div class="text-[#191610]" data-icon="Tent" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M255.31,196.75l-64-144A8,8,0,0,0,184,48H72a8,8,0,0,0-7.27,4.69.21.21,0,0,0,0,.06l0,.12,0,0L.69,196.75A8,8,0,0,0,8,208H248a8,8,0,0,0,7.31-11.25ZM64,192H20.31L64,93.7Zm16,0V93.7L123.69,192Zm61.2,0L84.31,64H178.8l56.89,128Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#191610] text-base font-bold leading-tight">Panthal Works</h2>
+                  <p class="text-[#8c7f5a] text-sm font-normal leading-normal">Traditional and modern panthal designs.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e3dfd3] bg-[#fbfaf9] p-4 flex-col">
+                <div class="text-[#191610]" data-icon="MicrophoneStage" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M168,16A72.07,72.07,0,0,0,96,88a73.29,73.29,0,0,0,.63,9.42L27.12,192.22A15.93,15.93,0,0,0,28.71,213L43,227.29a15.93,15.93,0,0,0,20.78,1.59l94.81-69.53A73.29,73.29,0,0,0,168,160a72,72,0,1,0,0-144Zm56,72a55.72,55.72,0,0,1-11.16,33.52L134.49,43.16A56,56,0,0,1,224,88ZM54.32,216,40,201.68,102.14,117A72.37,72.37,0,0,0,139,153.86ZM112,88a55.67,55.67,0,0,1,11.16-33.51l78.34,78.34A56,56,0,0,1,112,88Zm-2.35,58.34a8,8,0,0,1,0,11.31l-8,8a8,8,0,1,1-11.31-11.31l8-8A8,8,0,0,1,109.67,146.33Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#191610] text-base font-bold leading-tight">Stage &amp; Decor</h2>
+                  <p class="text-[#8c7f5a] text-sm font-normal leading-normal">Transform your venue with creative decor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+      <!-- testimonials section -->
+       <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Client Testimonials</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyn2leX2LpsN4vEKFkxHfUciCVr3kzUjKkkZ9_Qav8cRiDhI249uBdaMzpFX6ped1GeUxQxAYSeQq-zqoOsDLV5jvyltoGm0D6zhFo3YsczmhPpGJw656J-w5xPaH9ZTTjF29KBpLVaS_L6oqm7VU0bFYWDSQGtexvvtE6abvora90603AZcfcQ5QZOl0R4TjoOSp6xSwwc1vZJzusZmwqKrl3uCQzD_zWmvBpya8zrm6-cNFpTCzZNJITGkcTD33hFBu9uNSkjqM");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1c180d] text-base font-medium leading-normal">Sarah &amp; Mark</p>
+                    <p class="text-[#9e8747] text-sm font-normal leading-normal">
+                      "RHM Events made our wedding day absolutely perfect. Their attention to detail and personalized service exceeded our expectations."
+                    </p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXtOXWXY0kU5EvmwN8p2KNFIPgYCrScGW14ULUmdfftq0JT7zdD-2Q9am3BX8YeMKuFkLP5MVNXiWLX6hCGWnCdyicGlJPP5Wht61RrzNg6prJVJBObtkUZJmzT55Jp2cruphknjHEoefHXFUaEt_D8e7CSUKznOfIE1bBFmzNWf4lcgQ3bHZfi5i5juwmOCStjcF_-1rmCS0a7cCq0nIwxTOnAbDncz44hTCoAy-BiXAI9McHV7AUi_o0wWatkGhxFRzT-A9a0Ig");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1c180d] text-base font-medium leading-normal">Emily &amp; David</p>
+                    <p class="text-[#9e8747] text-sm font-normal leading-normal">
+                      "From planning to execution, RHM Events was exceptional. They handled everything flawlessly, allowing us to enjoy our special day."
+                    </p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRYGafkiXRL5CwnAlz08NjkM61NneuxHeIz6fZHuaBw657xRkmND7Kj7VlNVPOwvu64Ej9_y-CoZ1IJz8wsui43WJwWV78iZc8kTQlyr0pxKwaf3JoHCJU0E07Q5wtPCZdQhrw7c0Z14njsLHSFtuOZVijUPH0lcbFEOY7JprzlooV2Ofump_DVTA9ZaP34Qu6fVn5cUEobitNfEIvYNowYrok4XhOsCnXliVbWk4UDt3ZxgHiKhUo66g-YW7eq1ZSbBeWQScw8AI");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1c180d] text-base font-medium leading-normal">Jessica &amp; Ryan</p>
+                    <p class="text-[#9e8747] text-sm font-normal leading-normal">
+                      "We are so grateful to RHM Events for creating the wedding of our dreams. Their creativity and professionalism were outstanding."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ section -->
+     <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#1c180d] tracking-light text-[32px] font-bold leading-tight min-w-72">Frequently Asked Questions</p>
+            </div>
+            <div class="flex flex-col p-4 gap-3">
+              <details class="flex flex-col rounded-lg border border-[#e9e2ce] bg-[#fcfbf8] px-[15px] py-[7px] group" open="">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#1c180d] text-sm font-medium leading-normal">What types of events do you plan?</p>
+                  <div class="text-[#1c180d] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#9e8747] text-sm font-normal leading-normal pb-2">
+                  We specialize in planning a wide range of events, including weddings, corporate events, social gatherings, and private parties. Our team has experience in
+                  handling events of all sizes and styles, from intimate gatherings to large-scale celebrations.
+                </p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e9e2ce] bg-[#fcfbf8] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#1c180d] text-sm font-medium leading-normal">How far in advance should I book your services?</p>
+                  <div class="text-[#1c180d] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#9e8747] text-sm font-normal leading-normal pb-2">
+                  We specialize in planning a wide range of events, including weddings, corporate events, social gatherings, and private parties. Our team has experience in
+                  handling events of all sizes and styles, from intimate gatherings to large-scale celebrations.
+                </p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e9e2ce] bg-[#fcfbf8] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#1c180d] text-sm font-medium leading-normal">What is included in your event planning packages?</p>
+                  <div class="text-[#1c180d] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#9e8747] text-sm font-normal leading-normal pb-2">
+                  We specialize in planning a wide range of events, including weddings, corporate events, social gatherings, and private parties. Our team has experience in
+                  handling events of all sizes and styles, from intimate gatherings to large-scale celebrations.
+                </p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e9e2ce] bg-[#fcfbf8] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#1c180d] text-sm font-medium leading-normal">Do you offer custom packages?</p>
+                  <div class="text-[#1c180d] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#9e8747] text-sm font-normal leading-normal pb-2">
+                  We specialize in planning a wide range of events, including weddings, corporate events, social gatherings, and private parties. Our team has experience in
+                  handling events of all sizes and styles, from intimate gatherings to large-scale celebrations.
+                </p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#e9e2ce] bg-[#fcfbf8] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-[#1c180d] text-sm font-medium leading-normal">How do you handle unexpected issues on the day of the event?</p>
+                  <div class="text-[#1c180d] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#9e8747] text-sm font-normal leading-normal pb-2">
+                  We specialize in planning a wide range of events, including weddings, corporate events, social gatherings, and private parties. Our team has experience in
+                  handling events of all sizes and styles, from intimate gatherings to large-scale celebrations.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
      <!-- auto-sliding carousel of 3 hero images  -->
     <script>
   const heroImages = [
@@ -89,6 +293,7 @@
       `linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url('${heroImages[current]}')`;
   }, 3000); // Change image every 3 seconds
 </script>
-    <script src="./assets/js/script.js"></script>
+<!-- 🔄 REUSABLE: Script Reference - Standard across all pages -->
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
